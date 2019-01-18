@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     background: #F7F7F7;
+    margin-bottom: 50px;
     &__wr{
         &__flex{
             display: flex;
@@ -12,7 +13,7 @@
                 flex-shrink: 0;
                 width: 430px;
                 background-position: center;
-                
+                background-size: contain;
                 background-repeat: no-repeat;
                 position: relative;
                 z-index: 2;
