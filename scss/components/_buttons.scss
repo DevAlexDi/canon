@@ -8,6 +8,9 @@
     &--senter{
         justify-content: center;
     }
+    @media (max-width: 1199px){
+        justify-content: center;
+    }
     &__butt{
         display: block;
         padding: 12px 43px;
@@ -19,7 +22,13 @@
         background: #fff;
         font-size: 14px;
         color: #000000;
+        transition: 0.3s;
+        &:hover{
+           
+            background: #E2001A;
+            color: #fff;
         
+        }
     }
 }
 
@@ -35,6 +44,9 @@
     }
     &--more-margin{
         margin-bottom: 70px;
+        @media (max-width: 991px){
+            margin-bottom: 40px;
+        }
     }
     .check-style {
         .checkbox {
