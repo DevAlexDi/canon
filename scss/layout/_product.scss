@@ -1,0 +1,81 @@
+@import "layout/var";
+
+.other-prod{
+    &__title{
+        font-size: 24px;
+        font-weight: $b;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 33px;
+        strong{
+            color: #E2001A;
+        }
+    }
+    &__list{
+        display: flex;
+        width: calc(100% + 24px);
+        transform: translateX(-12px);
+        @media (max-width: 991px){
+            flex-wrap: wrap;
+        }
+        @media (max-width: 767px){
+            width: 100%;
+            transform: none;
+        }
+        &__item{
+            padding: 0 12px;
+            width: 25%;
+            margin-bottom: 24px;
+            @media (max-width: 991px){
+               width: 50%;
+            }
+             @media (max-width: 559px){
+                width: 100%;
+                padding: 0;
+            }
+            &__bg{
+                background: #F7F7F7;
+                transition: 0.3s;
+                padding: 16px 24px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+                    .butt-wrapp__butt{
+                        background: #E2001A;
+                        color: #fff;
+                    }
+                }
+                &__img{
+                    height: 195px;
+                    width: 100%;
+                    margin-bottom: 37px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    
+                }
+                &__link{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 16px;
+                    font-weight: $b;
+                    font-size: 18px;
+                    color: #000;
+                    @media (max-width: 1199px){
+                        font-size: 16px;
+                    }
+                    strong{
+                        color: #E2001A;
+                    }
+                }
+                .butt-wrapp{
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}

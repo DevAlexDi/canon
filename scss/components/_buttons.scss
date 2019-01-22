@@ -95,4 +95,37 @@
         }
     }
 }
-
+.breads{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    li{
+        position: relative;
+        padding-right: 16px;
+        font-size: 10px;
+        
+        color: #817F7F;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #E2001A;
+            border-radius: 50%;
+            right: 6px;
+            top: 5px;
+        }
+        &:last-child{
+            &:before{
+                display: none;
+            }
+        }
+        a{
+            color: #817F7F;
+            
+        }
+    }
+}
