@@ -44,6 +44,7 @@ footer{
             }
             &__work-time{
                 font-size: 10px;
+                
                 color: #fff;
             } 
         }
@@ -53,6 +54,8 @@ footer{
                 color: #fff;
                 font-size: 14px;
                 margin-bottom: 25px;
+                background-image: url(../img/cont-w.svg);
+                background-repeat: no-repeat;
             }
             &__metro{
                 display: flex;
