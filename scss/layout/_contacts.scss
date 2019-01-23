@@ -1,0 +1,104 @@
+@import "layout/var";
+
+.contacts{
+    &__wr{
+        display: flex;
+        @media (max-width: 767px){
+            display: block;
+        }
+        &__left{
+            width: 40%;
+            padding-right: 24px;
+            @media (max-width: 767px){
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            .butt-wrapp{
+                justify-content: center;
+            }
+            &__title{
+                font-size: 24px;
+                text-transform: uppercase;
+                margin: 0;
+                margin-bottom: 16px;
+                font-weight: $b;
+            }
+        }
+        &__right{
+            width: 60%;
+            box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.1);
+            @media (max-width: 767px){
+                width: 100%;
+            }
+            iframe{
+                width: 100%;
+                height: 370px;
+                @media (max-width: 767px){
+                    height: 300px;
+                }
+                @media (max-width: 559px){
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+.contacts-info{
+    margin-bottom: 50px;
+    @media (max-width: 767px){
+        margin-bottom: 30px;
+    }
+    &__cont{
+        margin-bottom: 24px;
+        &__tel{
+            display: block;
+            padding-left: 30px;
+            background-image: url(../img/tel-black.svg);
+            background-repeat: no-repeat;
+            background-position: top 2px left;
+            font-weight: $b;
+            font-size: 18px;
+            margin-bottom: 2px;
+            color: #444243;
+        }
+        &__work-time{
+            font-size: 10px;
+            color: #444243;
+        } 
+    }
+    &__where{
+        &__cont{
+            padding-left: 36px;
+            color: #444243;
+            font-size: 14px;
+            margin-bottom: 25px;
+            
+            background-image: url(../img/cont.svg);
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+        &__metro{
+            display: flex;
+            @media (max-width: 1199px){
+                display: block;
+            }
+            span{
+                display: block;
+                padding-left: 36px;
+                background-repeat: no-repeat;
+                font-size: 14px;
+                color: #444243;
+                margin-right: 24px;
+                background-position: top left;
+                background-image: url(../img/metro.svg);
+                @media (max-width: 1199px){
+                    margin-bottom: 10px;
+                }
+                @media (max-width: 767px){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
