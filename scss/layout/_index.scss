@@ -433,6 +433,9 @@
 .my-flex-row{
     display: flex;
     flex-wrap: wrap;
+    .col-md-4{
+        float: none;
+    }
 }
 .trust{
     margin-bottom: 10px;

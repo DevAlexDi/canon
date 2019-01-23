@@ -29,9 +29,18 @@ $(document).ready(function(){
         }
     });
     
-    $('.see-more').click(function(){
+    $('.see-more--open').click(function(){
         $('.price__left__list--hidden').addClass('showed');
         $(this).addClass('hide');
+        $('.see-more--close').removeClass('hide');
+        
+    });
+    
+    $('.see-more--close').click(function(){
+        $('.price__left__list--hidden').removeClass('showed');
+        $(this).addClass('hide');
+        $('.see-more--open').removeClass('hide');
+        
     });
 
     
