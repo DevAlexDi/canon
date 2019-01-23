@@ -12,9 +12,12 @@ footer{
         display: block;
     }
     &__left{
+       
         @media (max-width: 991px){
             margin-bottom: 24px;
         }
+        
+           
         &__logo{
             margin-bottom: 32px;
             img{
@@ -65,8 +68,14 @@ footer{
                     margin-right: 24px;
                     background-position: top left;
                     background-image: url(../img/metro.svg);
+                    @media (max-width: 1199px){
+                        margin-right: 17px;
+                    }
                     @media (max-width: 767px){
                         margin-bottom: 10px;
+                    }
+                    &:last-child{
+                        margin-right: 0;
                     }
                 }
             }
@@ -84,10 +93,21 @@ footer{
         &__item{
             padding-right: 35px;
             min-width: 200px;
+            
+            @media (max-width: 767px){
+                min-width: 175px;
+            }
             @media (max-width: 559px){
                 width: 100%;
                 min-width: 100%;
                 padding: 0;
+            }
+            &--width{
+                @media (max-width: 1199px){
+                        min-width: 150px;
+                        min-width: 150px;
+                    padding-right: 0;
+                }
             }
             &:last-child{
                 padding: 0;
